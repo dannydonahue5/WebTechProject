@@ -1,0 +1,61 @@
+table, th, td, tr {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    border: 3px solid lightgrey;
+    background-color: white;
+    border-collapse: collapse;
+  }
+  body {
+    background-color: lightblue;
+  }
+  img {
+    width: 60px;
+    text-align: center;
+  }
+  caption {
+    font-weight: bold;
+    font-size: xx-large;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgray;
+  }
+  li {
+    float: left;
+  }
+  li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover, dropdown:hover .dropbtn {
+    background-color: lightblue;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+.dropdown-content a:hover {
+    background-color: lightblue;
+  }
+.dropdown:hover .dropdown-content {
+display: block;
+}
