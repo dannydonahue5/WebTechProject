@@ -4,93 +4,176 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Beginner Guitar Song Recommendations</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dancing+Script" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
-    table, th, td, tr {
+        a {
+    text-decoration: none;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgray;
+  }
+  li {
+    float: left;
+  }
+  li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover, dropdown:hover .dropbtn {
+    background-color: lightblue;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+.dropdown-content a:hover {
+    background-color: lightblue;
+  }
+.dropdown:hover .dropdown-content {
+display: block;
+}
+    table, th, tr, td {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    border: 3px solid lightgrey;
+    border: 1px solid lightgrey;
     background-color: white;
     border-collapse: collapse;
   }
+  .acoustic {
+float: left;
+width: 30%;
+  }
+  .aimage {
+    float: left;
+    width: 20%;
+  }
+  .eimage {
+    float: left;
+    width: 18%;
+  }
+  .electric {
+    float: left;
+    width: 30%;
+  }
+  th {
+    font-family: "Dancing Script";
+    font-weight: lighter;
+  }
+  td {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  img {
+    width: 100px;
+  }
+  .fa-youtube {
+  background: #bb0000;
+  color: white;
+  padding-top: 1%;
+  width: 100%;
+}
+.fa {
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+.fa:hover {
+  opacity: 0.7;
+}
 </style>
 <body>
-    <table>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About</a></li>
+        <li><a href="progress.html">My Progress</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">For Beginners</a>
+          <div class="dropdown-content">
+            <a href="myadvice.html">My Advice</a>
+            <a href="chords.html">Chords to Learn</a>
+            <a href="inspire.html">Inspirations</a>
+            <a href="begsong.html">Song Recommendations</a>
+          </div>
+          <li><a href=nextsteps.html>Next Steps</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+        </li>
+      </ul>
+    <table class = "acoustic">
         <tr>
-        <th>Simple Songs</th>
+        <th colspan = "2">Acoustic Guitar Songs</th>
         </tr>
         <tr>
-            <td>Wonderwall</td>
-            <td>Video</td>
+            <td style = "width: 75%;">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1qPbGZqppFwLwcBC1JQ6Vr?utm_source=generator" width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </td>
+            <td><a href= "https://www.youtube.com/watch?v=o8wM8inaqmo" class="fa fa-youtube"></a></td>
           </tr>
           <tr>
-            <td>All of Me</td>
-            <td>Video</td>
+            <td style = "width: 75%;">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3U4isOIWM3VvDubwSI3y7a?utm_source=generator" width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </td>
+            <td><a href= "https://www.youtube.com/watch?v=HmG_oPsUVTs&t=19s" class="fa fa-youtube"></a></td>
           </tr>
           <tr>
-            <td>Riptide</td>
-            <td>Video</td>
+            <td style = "width: 75%;">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6zC0mpGYwbNTpk9SKwh08f?utm_source=generator" width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <td><a href= "https://www.youtube.com/watch?v=4FlQWk-WqPE&t=613s" class="fa fa-youtube"></a></td>
           </tr>
           <tr>
-            <td>Let it Be</td>
-            <td>Video</td>
+            <td style = "width: 75%;">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5DnT9a5IM3eMjKgXTWVJvi?utm_source=generator" width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <td><a href= "https://www.youtube.com/watch?v=XYi_3Ne4ZfA" class="fa fa-youtube"></a>
+            </td>
           </tr>
           <tr>
-            <td>Good Riddance (Time of your life)</td>
-            <td>Video</td>
+            <td style = "width: 75%;">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5jgFfDIR6FR0gvlA56Nakr?utm_source=generator" width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <td><a href= "https://www.youtube.com/watch?v=5TnySn2KqD4&t=17s" class="fa fa-youtube"></a></td>
           </tr>
     </table>
-    <table>
+    <img class = "aimage" src="images/halfacoustic.PNG"></img>
+    <img class = "eimage" src="images/halfelectric.PNG"></img>
+    <table class = "electric">
         <tr>
-        <th>Fingerstyle Guitar Songs</th>
+        <th colspan = "2">Electric Guitar Songs</th>
         </tr>
         <tr>
-            <td>Blackbird</td>
-            <td>Video</td>
+            <td style = "width: 75%;"> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5SAUIWdZ04OxYfJFDchC7S?utm_source=generator"width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
+            <td><a href= "https://www.youtube.com/watch?v=dr9izvP4a6E" class="fa fa-youtube"></a></td>
           </tr>
           <tr>
-            <td>House of the Rising Sun</td>
-            <td>Video</td>
+            <td style = "width: 75%;"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5ghIJDpPoe3CfHMGu71E6T?utm_source=generator"width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td></td>
+            <td><a href= "https://www.youtube.com/watch?v=vlt0V3p31D8" class="fa fa-youtube"></a></td>
           </tr>
           <tr>
-            <td>Dust in the Wind</td>
-            <td>Video</td>
+            <td style = "width: 75%;"> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2PzU4IB8Dr6mxV3lHuaG34?utm_source=generator"width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
+            <td><a href= "https://www.youtube.com/watch?v=r4B-s3QFzFA" class="fa fa-youtube"></a></td>
           </tr>
           <tr>
-            <td>Wonderful Tonight</td>
-            <td>Video</td>
+            <td style = "width: 75%;"> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3dPQuX8Gs42Y7b454ybpMR?utm_source=generator"width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
+            <td><a href= "https://www.youtube.com/watch?v=fLCXZs6SWFQ" class="fa fa-youtube"></a></td>
           </tr>
           <tr>
-            <td>Tears in Heaven</td>
-            <td>Video</td>
-          </tr>
-    </table>
-    <table>
-        <tr>
-        <th>Electric Guitar Songs</th>
-        </tr>
-        <tr>
-            <td>Smoke on the Water</td>
-            <td>Video</td>
-          </tr>
-          <tr>
-            <td>Smells like Teen Spirit</td>
-            <td>Video</td>
-          </tr>
-          <tr>
-            <td>Satisfaction</td>
-            <td>Video</td>
-          </tr>
-          <tr>
-            <td>Creep</td>
-            <td>Video</td>
-          </tr>
-          <tr>
-            <td>Back in Black</td>
-            <td>Video</td>
+            <td style = "width: 75%;"> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2m1hi0nfMR9vdGC8UcrnwU?utm_source=generator"width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
+            <td><a href= https://www.youtube.com/watch?v=O7vkTA3vdkw class="fa fa-youtube"></a></td>
           </tr>
     </table>
 </body>

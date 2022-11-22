@@ -66,8 +66,10 @@ h1 {
     margin: 20px;
     }
   body {
-    background-color: lightblue;
-    background-image: linear-gradient(lightblue, white);
-    margin-left: 120px;
-    margin-right: 120px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0;
+        background-image: url(images/backgroundguitar.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
   }
