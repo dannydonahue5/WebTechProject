@@ -8,24 +8,116 @@
     <meta name="keywords" content ="HTML,CSS,XML,JavaScript">
     <meta name="author" content="Danny Donahue">
     <title>Teaching Yourself how to Play Guitar - Homepage</title>
-    <link rel="stylesheet" href="styles/index.css"/>
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
 </head>
 <style>
-        body { 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    a {
+    text-decoration: none;
+  }
+  ul {
+    list-style-type: none;
     margin: 0;
-    background-image: url(images/backgroundguitar.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgray;
+  }
+  li {
+    float: left;
+  }
+  li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover, dropdown:hover .dropbtn {
+    background-color: lightblue;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+.dropdown-content a:hover {
+    background-color: lightblue;
+  }
+.dropdown:hover .dropdown-content {
+display: block;
 }
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+    font-size: 10vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 10%;
+}
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: normal;
+    padding-bottom: 1%;
+}
+.author {
+    border: 1px solid grey;
+    float: left;
+    text-align: center;
+    width: 20%;
+    margin: 2%;
+}
+.begin {
+    border: 1px solid grey;
+    float: left;
+    text-align: center;
+    width: 20%;
+    margin: 2%;
+}
+.extra {
+    border: 1px solid grey;
+    float: left;
+    text-align: center;
+    margin: 2%;
+    width: 20%;
+}
+.content {
+   align-content: center;
+   display: flex;
+   justify-content: center;
+   padding-top: 3%;
+   background-color: whitesmoke;
+}
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+.links {
+    text-align: left;
+}
+
+.header {
+     background-color: lightgrey; 
+}
+
 </style>
   <body>
-    <h1>Teaching Yourself Guitar &#127928;</h1>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="aboutme.html">About</a></li>
@@ -43,6 +135,35 @@
         <li><a href="sitemap.html">Sitemap</a></li>
       </li>
     </ul>
+    <div class = "header">
+        <h1>Learning Guitar</h1>
+        <h2>An Extensive Guide</h2>
+    </div>
+    <div class = content>
+    <div class = author>
+        <h3>About Me</h3>
+        <dl>
+            <dt><a href="aboutme.html">Background & Story</a></dt>
+            <dt><a href="myadvice.html">My Advice</a></dt>
+            <dt><a href="timeline.html">My Progress</a></dt>
+        </dl>
+        </div>
+
+    <div class = begin>
+        <h3>Starting Out</h3>
+        <dl>
+            <dt><a href="chords.html">Chords & Basic Knowledge</a><dt>
+            <dt><a href="begsong.html">Songs to Learn</a></dt>
+        </dl>
+        </div>
+    <div class = extra>
+        <h3>Other Resources</h3>
+    <dl>
+        <dt><a href="inspire.html">Music Inspirations</a></dt>
+        <dt><a href="contact.html">Contact Page</a></dt>
+    </dl>
+    </div>
+    </div>
   </body>
 </html>
 </body>
