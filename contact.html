@@ -21,9 +21,9 @@
 <style>
 .share {
     float: left;
-    width: 75%;
+    width: 80%;
     padding-left: 10%;
-    padding-right: 5%;
+    padding-right: 10%;
     padding-top: 0%;
 }
 form {
@@ -91,6 +91,9 @@ h2 {
     text-align: center;
     font-size: 50px;
 }
+.share {
+  background-color: #90E0EF;
+}
 </style>
 <body>
     <ul class = "nav">
@@ -112,7 +115,7 @@ h2 {
     <div class = "share">
         <h2>CUSTOMER FEEDBACK</h2>
         <p>Share your Thoughts</p>
-        <form method ="post" action="https://oim-apis.herokuapp.com/form">
+        <form name = "myForm" onsubmit = "return validateForm()" method ="post" action="https://oim-apis.herokuapp.com/form">
             <fieldset>
                 <legend>Your Information:</legend>
             <div>
@@ -182,5 +185,25 @@ h2 {
                     <button type="reset" value="Reset">Reset</button>
         </fieldset>
         </form>
+        <script>
+          function validateForm(){
+            let a = document.forms["myForm"]["firstname"].value;
+            if (a=="") {
+              alert("Please enter a first name!");
+              return false;
+            }
+            let b = document.forms["myForm"]["lastname"].value;
+            if (b=="") {
+              alert("Please enter a last name!");
+              return false;
+            }
+            let c = document.forms["myForm"]["email"].value;
+            if (c=="") {
+              alert("Please enter an email!");
+              return false;
+            }
+          }
+        </script>
+
 </body>
 </html>

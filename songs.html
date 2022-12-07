@@ -119,7 +119,7 @@ margin-top: 10%;
   opacity: 0.7;
 }
 </style>
-<body>
+<body onkeydown="movehere(event)">
     <ul class = "nav">
         <li><a href="index.html">HOME</a></li>
         <li><a href="aboutme.html">ABOUT</a></li>
@@ -193,8 +193,59 @@ margin-top: 10%;
           </tr>
           <tr>
             <td style = "width: 75%;"> <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2m1hi0nfMR9vdGC8UcrnwU?utm_source=generator"width="100%" height="80px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            <td><a href= https://www.youtube.com/watch?v=O7vkTA3vdkw class="fa fa-youtube"></a></td>
+            <td><a href= https://www.youtube.com/watch?vO7vkTA3vdkw class="fa fa-youtube"></a></td>
           </tr>
     </table>
+    <img style = "padding-left:10%; margin-top: 5%;"; src = "images/pick.png" alt = "pick" id = "pick"></img>
 </body>
+<script>
+            let objImage = null;
+            function loaded() {
+                objImage = document.getElementById("pick");
+                objImage.style.position = "relative";
+                objImage.style.left = "0px";
+                objImage.style.top = "0px";
+            }
+            //This function indicates where I want the image to be when the page loads
+
+            function movehere(e) {
+              //e is an object containing information about event that occurs, so here we describe what happens when I press 
+              //certain buttons
+                var press = e.which || e.press;
+                //created a variable press which switches when certain events occur
+
+                switch (press) {
+                    case 37: //left arrow key
+                        moveLeft();
+                        break;
+                    case 38: //Up arrow key
+                        moveUp();
+                        break;
+                    case 39: //right arrow key
+                        moveRight();
+                        break;
+                    case 40: //down arrow key
+                        moveDown();
+                        break;
+                }
+            }
+            function moveLeft() {
+                objImage.style.left = parseInt(objImage.style.left) - 10 + "px";
+            }
+            //what happens when I move the left arrow key
+            function moveUp() {
+                objImage.style.top = parseInt(objImage.style.top) - 10 + "px";
+            }
+            //what happens when I move the up arrow key
+            function moveRight() {
+                objImage.style.left = parseInt(objImage.style.left) + 10 + "px";
+            }
+            //what happens when I move the right arrow key
+            function moveDown() {
+                objImage.style.top = parseInt(objImage.style.top) + 10 + "px";
+            }
+            //what happens when I move the down arrow key
+            window.onload = loaded;
+            //when the window is loaded, this happens
+</script>
 </html>

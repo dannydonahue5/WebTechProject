@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Teaching Yourself how to the Play Guitar">
+  <meta name="keywords" content ="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Danny Donahue">
+  <title>Teaching Yourself how to Play Guitar - My Progress</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
 </head>
 <body>
 <style>
@@ -16,7 +26,7 @@ a {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: lightgray;
+    background-color: whitesmoke;
   }
   li {
     float: left;
@@ -55,7 +65,7 @@ display: block;
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: #48CAE4;
   font-family: Helvetica, sans-serif;
 }
 
@@ -72,7 +82,7 @@ body {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color: #CAF0F8;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -94,8 +104,8 @@ body {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: white;
-  border: 4px solid blue;
+  background-color: #CAF0F8;
+  border: 4px solid #023E8A;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -122,7 +132,7 @@ body {
   right: 30px;
   border: medium solid lightblue;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent blue;
+  border-color: transparent transparent transparent #023E8A;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -136,7 +146,7 @@ body {
   left: 30px;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
-  border-color: transparent blue transparent transparent;
+  border-color: transparent #023E8A transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -147,7 +157,7 @@ body {
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: lightblue;
+  background-color:#0096C7;
   position: relative;
   border-radius: 6px;
 }
@@ -186,34 +196,35 @@ body {
 }
 p {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 12px;
+  font-size: 15px;
   text-align: justify;
+  color: #CAF0F8;
 }
 h2 {
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
   text-align: center;
+  color: #03045E;
 }
 </style>
 </head>
 <body>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutme.html">About</a></li>
-        <li><a href="progress.html">My Progress</a></li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">For Beginners</a>
-          <div class="dropdown-content">
-            <a href="myadvice.html">My Advice</a>
-            <a href="chords.html">Chords to Learn</a>
-            <a href="inspire.html">Inspirations</a>
-            <a href="begsong.html">Song Recommendations</a>
-          </div>
-          <li><a href=nextsteps.html>Next Steps</a></li>
-          <li><a href="feedback.html">Customer Feedback</a></li>
-          <li><a href="sitemap.html">Sitemap</a></li>
-        </li>
-      </ul>
+  <ul class = "nav">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="aboutme.html">ABOUT</a></li>
+    <li><a href="myprogress.html">PROGRESS</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">RESOURCES</a>
+      <div class="dropdown-content">
+        <a href="myadvice.html">ADVICE</a>
+        <a href="chords.html">CHORDS</a>
+        <a href="songs.html">SONGS</a>
+        <a href="inspire.html">INSPIRATION</a>
+      </div>
+      </li>
+      <li><a href=contact.html>CONTACT</a></li>
+      <li><a href="sitemap.html">SITEMAP</a></li>
+  </ul>
 <div class="timeline">
   <div class="container left">
     <div class="content">

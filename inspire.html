@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guitar Inspirations</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Teaching Yourself how to the Play Guitar">
+  <meta name="keywords" content ="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Danny Donahue">
+  <title>Teaching Yourself how to Play Guitar - Music inspirations</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
 </head>
 <style>
    *  {box-sizing:border-box}
@@ -105,12 +115,13 @@ p {
 }
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: lightgray;
-  }
-  li {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+}
+li {
     float: left;
   }
   li a, .dropbtn {
@@ -121,7 +132,8 @@ ul {
     text-decoration: none;
   }
   li a:hover, dropdown:hover .dropbtn {
-    background-color: lightblue;
+    background-color: whitesmoke;
+    color: black;
   }
   .dropdown-content {
     display: none;
@@ -130,37 +142,53 @@ ul {
   }
   .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 14px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
+    text-align: center;
   }
 .dropdown-content a:hover {
-    background-color: lightblue;
+    background-color: whitesmoke;
+    color: black;
   }
 .dropdown:hover .dropdown-content {
 display: block;
 }
+.nav {
+    top: 0;
+    right: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+body {
+  background-color: #90E0EF;
+}
 </style>
 <body>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="progress.html">My Progress</a></li>
-        <li class="dropdown">
-          <a href="javascript:void(0)" class="dropbtn">For Beginners</a>
-          <div class="dropdown-content">
-            <a href="myadvice.html">My Advice</a>
-            <a href="chords.html">Chords to Learn</a>
-            <a href="inspire.html">Inspirations</a>
-            <a href="begsong.html">Song Recommendations</a>
-          </div>
-          <li><a href=nextsteps.html>Next Steps</a></li>
-          <li><a href="feedback.html">Customer Feedback</a></li>
-          <li><a href="sitemap.html">Sitemap</a></li>
-        </li>
-      </ul>
-      <br>
+  <ul class = "nav">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="aboutme.html">ABOUT</a></li>
+    <li><a href="myprogress.html">PROGRESS</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">RESOURCES</a>
+      <div class="dropdown-content">
+        <a href="myadvice.html">ADVICE</a>
+        <a href="chords.html">CHORDS</a>
+        <a href="songs.html">SONGS</a>
+        <a href="inspire.html">INSPIRATION</a>
+      </div>
+      </li>
+      <li><a href=contact.html>CONTACT</a></li>
+      <li><a href="sitemap.html">SITEMAP</a></li>
+  </ul>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
     <!-- Slideshow container -->
 <div class="slideshow-container">
 
